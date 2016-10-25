@@ -31,4 +31,4 @@ There are no plans to ever publish the package to CRAN.
 
 ## License
 
-See [the license file.](LICENSE.MD)
+See [the license.](LICENSE.MD)
