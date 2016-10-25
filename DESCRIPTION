@@ -1,0 +1,12 @@
+Package: jolars
+Title: A Collection of Johan Larsson's Personal Functions.
+Version: 0.0.0.9000
+Authors@R: person("Johan", "Larsson", email = "johanlarsson@outlook.com", role = c("aut", "cre"))
+Description: A collection of my personal functions in R.
+Depends:
+    R (>= 3.3.1)
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+Suggests: testthat
