@@ -31,7 +31,7 @@ sample_disk <- function(x = 0, y = 0, r = 1, n = 250) {
   rad <- sqrt(1L:n) / sqrt(n)
   px <- rad * cos(theta)
   py <- rad * sin(theta)
-  x <- px * (r / max(rad)) + x
-  y <- py * (r / max(rad)) + y
+  x <- px * r / max(rad) + x
+  y <- py * r / max(rad) + y
   cbind(x, y)
 }
