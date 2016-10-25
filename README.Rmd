@@ -23,12 +23,12 @@ A personal R package of mainly utility functions for use in R.
 
 The package can be installed by running
 
-```{r}
+```{r, eval = FALSE}
 devtools::install_github("jolars/jolars")
 ```
 
-There are no plans to ever publish the package to CRAN.
+There are no plans to publish the package to CRAN.
 
 ## License
 
-See [the license.](LICENSE.MD)
+See [the license](LICENSE.md).

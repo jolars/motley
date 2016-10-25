@@ -14,19 +14,11 @@ The package can be installed by running
 
 ``` r
 devtools::install_github("jolars/jolars")
-#> Downloading GitHub repo jolars/jolars@master
-#> from URL https://api.github.com/repos/jolars/jolars/zipball/master
-#> Installing jolars
-#> "C:/PROGRA~1/R/R-33~1.1/bin/x64/R" --no-site-file --no-environ --no-save  \
-#>   --no-restore --quiet CMD INSTALL  \
-#>   "C:/Users/johan/AppData/Local/Temp/Rtmpuskzxx/devtools33204b5714c/jolars-jolars-323a4ed"  \
-#>   --library="C:/Users/johan/Documents/R/win-library/3.3" --install-tests
-#> 
 ```
 
-There are no plans to ever publish the package to CRAN.
+There are no plans to publish the package to CRAN.
 
 License
 -------
 
-See [the license.](LICENSE.MD)
+See [the license](LICENSE.md).
