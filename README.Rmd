@@ -18,3 +18,17 @@ knitr::opts_chunk$set(
 # jolars
 
 A personal R package of mainly utility functions for use in R.
+
+## Installation
+
+The package can be installed by running
+
+```{r}
+devtools::install_github("jolars/jolars")
+```
+
+There are no plans to ever publish the package to CRAN.
+
+## License
+
+See [the license file.](LICENSE.MD)
