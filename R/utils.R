@@ -1,4 +1,4 @@
-#' Spread points across a disk
+#' Spread points across a disk using Vogel's method
 #'
 #' Spreads points evenly across a disk of any radius by making use of the golden
 #' angle. Defaults to
@@ -23,6 +23,7 @@ sample_disk <- function(x = 0, y = 0, r = 1, n = 250) {
   assert_that(is.numeric(x))
   assert_that(is.numeric(y))
   assert_that(is.numeric(r))
+  assert_that(is.numeric(n))
   assert_that(r > 0)
   assert_that(n > 0)
   assert_that(n %% 1 == 0)
@@ -36,4 +37,25 @@ sample_disk <- function(x = 0, y = 0, r = 1, n = 250) {
   x <- px * r / max(rad) + x
   y <- py * r / max(rad) + y
   cbind(x, y)
+}
+
+#' Generate a matrix of binary combinations
+#'
+#' Generates a matrix of all possible combinations of binary values (0s and 1s).
+#'
+#' @param n number of combinations
+#' @return A matrix of binary combinations, one for each row.
+#' @seealso \code{\link[base]{expand.grid}}
+#'
+#' @examples
+#' combine_binaries(3)
+
+combine_binaries <- function(n) {
+  assert_that(n > 0)
+  assert_that(n %% 1 == 0)
+  assert_that(is.numeric(n))
+
+  ll <- vector("list", n)
+  for (i in seq_along(ll)) ll[[i]] <- 0L:1L
+  as.matrix(expand.grid(ll, stringsAsFactors = FALSE, KEEP.OUT.ATTRS = FALSE))
 }
