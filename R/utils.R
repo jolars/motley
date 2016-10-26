@@ -43,12 +43,15 @@ sample_disk <- function(x = 0, y = 0, r = 1, n = 250) {
 #'
 #' Generates a matrix of all possible combinations of binary values (0s and 1s).
 #'
-#' @param n number of combinations
+#' @param n The number of combinations to produce.
 #' @return A matrix of binary combinations, one for each row.
 #' @seealso \code{\link[base]{expand.grid}}
 #'
 #' @examples
 #' combine_binaries(3)
+#'
+#' @importFrom assertthat assert_that
+#' @export
 
 combine_binaries <- function(n) {
   assert_that(n > 0)
