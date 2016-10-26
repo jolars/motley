@@ -27,8 +27,10 @@ sample_disk <- function(x = 0, y = 0, r = 1, n = 250) {
   assert_that(n > 0)
   assert_that(n %% 1 == 0)
 
-  theta <- 1L:n * pi * (3L - sqrt(5L))
-  rad <- sqrt(1L:n) / sqrt(n)
+  n <- n - 1
+
+  theta <- 0L:n * pi * (3L - sqrt(5L))
+  rad <- sqrt(0L:n) / sqrt(n)
   px <- rad * cos(theta)
   py <- rad * sin(theta)
   x <- px * r / max(rad) + x
