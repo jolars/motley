@@ -2,7 +2,7 @@
 % Please edit documentation in R/utils.R
 \name{sample_disk}
 \alias{sample_disk}
-\title{Spread points across a disk}
+\title{Spread points across a disk using Vogel's method}
 \usage{
 sample_disk(x = 0, y = 0, r = 1, n = 250)
 }
