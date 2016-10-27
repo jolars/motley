@@ -1,17 +1,24 @@
 Package: motley
-Title: A Motley of Useful R Functions
-Version: 0.0.0.9003
-Authors@R: person("Johan", "Larsson", email = "johanlarsson@outlook.com", role = c("aut", "cre"))
-Description: A collection of miscellaneous functions for a wide variety of 
+Title: A Motley of R Functions
+Version: 0.0.0.9004
+Authors@R: person("Johan", "Larsson", email = "johanlarsson@outlook.com",
+                  role = c("aut", "cre"))
+Description: A collection of miscellaneous functions for a variety of 
     use cases.
 Depends:
     R (>= 3.3.1)
 Imports:
     assertthat
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1
-Suggests: testthat, knitr,
-    rmarkdown
 VignetteBuilder: knitr
+URL: https://github.com/jolars/motley
+BugReports: https://github.com/jolars/motley/issues
+RoxygenNote: 5.0.1
+

@@ -1,4 +1,4 @@
 library(testthat)
-library(jolars)
+library(motley)
 
-test_check("jolars")
+test_check("motley")
