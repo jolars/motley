@@ -20,6 +20,6 @@ combine_binaries(3)
 
 }
 \seealso{
-\code{\link[base]{expand.grid}}
+\code{\link[base]{expand.grid}}, \code{\link[utils]{combn}}
 }
 
