@@ -19,9 +19,9 @@ sample_disk(x = 0, y = 0, r = 1, n = 250)
 A matrix of \code{x} and \code{y} coordinates.
 }
 \description{
-Spreads points evenly across a disk of any radius by making use of the golden
-angle. Defaults to
-\href{https://en.wikipedia.org/wiki/Unit_disk}{the unit disk}.
+Spreads points evenly across a disk of any radius using the golden
+angle. Defaults to sampling 250 points on the
+\href{https://en.wikipedia.org/wiki/Unit_disk}{unit disk}.
 }
 \details{
 The function is vectorized.
